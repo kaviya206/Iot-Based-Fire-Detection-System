@@ -16,7 +16,6 @@ This project is especially useful in applications such as:
 - Laboratories
 - Smart buildings or factories
 
-In addition to detection, a **manual push button** is integrated to **mute the buzzer**, allowing users to acknowledge the alert without disabling the system.
 
 This project is **fully simulated using Wokwi**, a virtual platform that enables real-time testing and visualization of embedded systems. It is also compatible with physical ESP32 boards and components.
 
