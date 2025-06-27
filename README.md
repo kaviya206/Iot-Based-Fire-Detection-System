@@ -40,9 +40,8 @@ This project is **fully simulated using Wokwi**, a virtual platform that enables
 | Buzzer           | 1        | Audio output to indicate fire alert       |
 | I2C LCD 20x4     | 1        | Displays temperature and system status    |
 | Jumper Wires     | As needed| For making all necessary connections      |
-| Breadboard       | Optional | For prototyping (if using real hardware)  |
 
----
+
 
 ## Software
 - Wokwi Simulator
