@@ -91,7 +91,6 @@ This project uses the **Blynk IoT platform** to provide cloud connectivity and r
 | Widget Type | Virtual Pin | Description             |
 |-------------|-------------|-------------------------|
 | Label       | V0          | Displays fire alert     |
-| Gauge/Display | V1        | Displays temperature    |
 
 ## Author
 Kaviya
