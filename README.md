@@ -26,9 +26,8 @@ This project is **fully simulated using Wokwi**, a virtual platform that enables
 - Real-time temperature monitoring using a DHT22 sensor
 - Audible fire alert via active buzzer
 - Visual display of temperature and fire status using an I2C LCD
-- Manual mute button to disable the buzzer during an alert
 - Real-time fire alerts and temperature logging on the Blynk IoT app
-- Fully testable in Wokwi (online simulator) and deployable on real hardware
+- Fully testable in Wokwi and deployable on real hardware
 
 
 
@@ -65,7 +64,6 @@ This project is **fully simulated using Wokwi**, a virtual platform that enables
    - The **Blynk app** receives:
      - An alert message via **Virtual Pin V0**
      - The current temperature via **Virtual Pin V1**
-4. The user can press a **push button** to mute the buzzer while the alert continues to display and send data.
 
 
 ## Circuit Diagram
