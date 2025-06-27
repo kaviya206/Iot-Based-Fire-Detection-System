@@ -2,12 +2,11 @@
 
 ## Project Description
 
-This project demonstrates a smart **fire detection and alert system** using the **ESP32 microcontroller**, a **DHT22 digital temperature sensor**, a **20x4 I2C LCD**, and a **buzzer** for local alerts. The primary objective is to detect abnormal temperature rises that may indicate a fire and to respond immediately with both **local warnings** and **remote IoT-based alerts**.
+This project demonstrates a smart **fire detection and alert system** using the **ESP32 microcontroller**, a **DHT22 digital temperature sensor**,  and a **buzzer** for local alerts. The primary objective is to detect abnormal temperature rises that may indicate a fire and to respond immediately with both **local warnings** and **remote IoT-based alerts**.
 
 The ESP32 constantly reads temperature values from the DHT22 sensor. If the temperature crosses a defined threshold (between 70°C and 80°C), the system recognizes this as a fire event. Upon detection:
 
 - A **buzzer is activated** to alert nearby individuals.
-- The **LCD** displays a warning message indicating the fire.
 - The system sends a real-time alert and temperature value to the **Blynk IoT platform**, which notifies the user via the **Blynk mobile app or web dashboard**.
 
 This project is especially useful in applications such as:
@@ -38,7 +37,6 @@ This project is **fully simulated using Wokwi**, a virtual platform that enables
 | ESP32 Dev Board  | 1        | Main microcontroller with WiFi capability |
 | DHT22 Sensor     | 1        | Digital sensor for temperature readings   |
 | Buzzer           | 1        | Audio output to indicate fire alert       |
-| I2C LCD 20x4     | 1        | Displays temperature and system status    |
 | Jumper Wires     | As needed| For making all necessary connections      |
 
 
@@ -48,7 +46,6 @@ This project is **fully simulated using Wokwi**, a virtual platform that enables
 ### Required Arduino Libraries:
 - `DHT.h` — for reading data from the DHT22 sensor
 - `Wire.h` — for I2C communication with the LCD
-- `LiquidCrystal_I2C.h` — for driving the LCD
 - `WiFi.h` — for ESP32 WiFi connectivity
 - `BlynkSimpleEsp32.h` — for connecting to the Blynk IoT platform
 
@@ -59,10 +56,8 @@ This project is **fully simulated using Wokwi**, a virtual platform that enables
 2. The temperature is displayed on the **LCD** in real time.
 3. If the temperature rises, the system identifies it as a fire:
    - A **buzzer** is activated as a local alarm.
-   - The **LCD** displays “FIRE DETECTED”.
    - The **Blynk app** receives:
      - An alert message via **Virtual Pin V0**
-     - The current temperature via **Virtual Pin V1**
 
 
 ## Circuit Diagram
@@ -76,10 +71,8 @@ This project is **fully simulated using Wokwi**, a virtual platform that enables
 |-----------|---------------------|---------------------------|
 | GPIO 4   | DHT22 Data Pin      | Temperature input         |
 | GPIO 12   | Buzzer              | Alert sound output        |
-| GPIO 21   | LCD SDA             | I2C Data Line             |
-| GPIO 22   | LCD SCL             | I2C Clock Line            |
 | GND       | All component grounds | Common ground            |
-| 3.3V / 5V | DHT22, LCD Power    | Depending on module specs |
+| 3.3V / 5V | DHT22 | Depending on module specs |
 
 
 ## IoT Integration with Blynk
