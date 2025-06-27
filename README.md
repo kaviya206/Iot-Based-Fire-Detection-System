@@ -31,7 +31,7 @@ This project is **fully simulated using Wokwi**, a virtual platform that enables
 
 
 
-## Hardware Used
+## Components Used
 
 | Component         | Quantity | Description                               |
 |------------------|----------|-------------------------------------------|
